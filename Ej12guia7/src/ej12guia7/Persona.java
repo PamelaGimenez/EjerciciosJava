@@ -43,13 +43,13 @@ public class Persona {
 
 
         Scanner ingresoDatos = new Scanner(System.in, StandardCharsets.ISO_8859_1).useDelimiter("\n").useLocale(Locale.US);
-        System.out.println("Ingrese su nombre");
+        System.out.println("Ingrese un nombre");
         nombre=ingresoDatos.next();
-        System.out.println("Ingrese el día de su nacimiento");
+        System.out.println("Ingrese el día de nacimiento");
         dia = ingresoDatos.nextInt();
-        System.out.println("Ingrese el mes de su nacimiento");
+        System.out.println("Ingrese el mes de nacimiento");
         mes = ingresoDatos.nextInt();
-        System.out.println("Ingrese el año de su nacimiento");
+        System.out.println("Ingrese el año de nacimiento");
         anio = ingresoDatos.nextInt();
         Date fechaNacimiento = new Date(anio-1900, mes -1, dia);
         setFechaDeNacimiento(fechaNacimiento);
