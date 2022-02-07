@@ -64,7 +64,6 @@ public class Persona {
 
     public int calcularEdad() {
         Date fechaActual = new Date();
-        String fechaActualFormateada = new SimpleDateFormat("dd-MM-yyyy").format(fechaActual);
         int añoActual = fechaActual.getYear() + 1900;
         int añoNacimiento = getFechaDeNacimiento().getYear() + 1900;
         int edad = añoActual - añoNacimiento;
